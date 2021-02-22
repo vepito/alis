@@ -1788,7 +1788,8 @@ EOT
 }
 
 function main() {
-    ALL_STEPS=("configuration_install" "sanitize_variables" "check_variables" "warning" "init" "facts" "checks" "prepare" "partition" "install" "configuration" "mkinitcpio_configuration" "display_driver" "kernels" "mkinitcpio" "network" "virtualbox" "users" "bootloader" "custom_shell" "desktop_environment" "packages" "vagrant" "systemd_units" "end")
+    # ALL_STEPS=("configuration_install" "sanitize_variables" "check_variables" "warning" "init" "facts" "checks" "prepare" "partition" "install" "configuration" "mkinitcpio_configuration" "display_driver" "kernels" "mkinitcpio" "network" "virtualbox" "users" "bootloader" "custom_shell" "desktop_environment" "packages" "vagrant" "systemd_units" "end")
+    ALL_STEPS=("configuration_install" "sanitize_variables" "check_variables" "warning" "init" "facts" "checks" "prepare" "partition" "install" "configuration" "mkinitcpio_configuration" "display_driver" "kernels" "mkinitcpio" "virtualbox" "users" "bootloader" "custom_shell" "desktop_environment" "packages" "vagrant" "systemd_units" "end")
     STEP="configuration_install"
 
     if [ -n "$1" ]; then
